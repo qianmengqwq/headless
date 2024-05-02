@@ -16,7 +16,7 @@ export default defineConfig({
 
   build: {
     lib: {
-      name: 'yi-ui',
+      name: 'sayoriqwq-ui',
       fileName: 'index',
       entry: resolve(__dirname, 'src/index.ts'),
     },

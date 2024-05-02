@@ -19,6 +19,9 @@
     "release": "pnpm build && pnpm release:only",
     "release:only": "changeset publish"
   },
+  "dependencies": {
+    "@sayoriqwq-ui/vue": "link:./packages/vue"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
     "@changesets/cli": "^2.27.1",

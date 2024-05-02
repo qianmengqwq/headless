@@ -1,6 +1,7 @@
 {
   "name": "docs",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "author": "",
   "license": "ISC",
@@ -14,6 +15,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.3",
     "vitepress": "^1.1.4"
-  },
-  "publishConfig": { "access": "public" }
+  }
 }

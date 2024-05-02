@@ -10,12 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@yi-ui/vue": "link:../../packages/vue",
     "nuxt": "^3.11.2",
+    "sayoriqwq-ui": "^2.0.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

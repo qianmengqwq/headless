@@ -1,6 +1,6 @@
 {
-  "name": "vue",
-  "version": "1.0.0",
+  "name": "sayoriqwq-ui",
+  "version": "2.0.0",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -32,5 +32,7 @@
     "vue-tsc": "^2.0.16"
   },
   "typings": "./dist/index.d.ts",
-  "publishConfig": { "access": "public" }
+  "publishConfig": {
+    "access": "public"
+  }
 }

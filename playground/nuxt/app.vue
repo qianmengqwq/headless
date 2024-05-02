@@ -4,8 +4,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { add } from '@yi-ui/vue'
-
-add(1, 2)
+<script setup lang="ts">
+import { add } from 'sayoriqwq-ui'
+console.log('add', add(1, 2))
 </script>
