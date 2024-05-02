@@ -1,0 +1,1 @@
+(function(e,n){typeof exports=="object"&&typeof module<"u"?n(exports):typeof define=="function"&&define.amd?define(["exports"],n):(e=typeof globalThis<"u"?globalThis:e||self,n(e["yi-ui"]={}))})(this,function(e){"use strict";const n="1111",o="2222",t=()=>{console.log("fn")},i=(d,f)=>d+f;e.a=n,e.add=i,e.b=o,e.fn=t,Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})});
