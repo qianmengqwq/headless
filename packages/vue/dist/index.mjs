@@ -1,9 +1,13 @@
-const t = "1111", c = "2222", s = () => {
+const t = "1111", c = "2222";
+function f() {
   console.log("fn");
-}, e = (n, o) => n + o;
+}
+function e(n, o) {
+  return n + o;
+}
 export {
   t as a,
   e as add,
   c as b,
-  s as fn
+  f as fn
 };

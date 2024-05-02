@@ -31,5 +31,6 @@
     "vue": "^3.4.26",
     "vue-tsc": "^2.0.16"
   },
-  "typings": "./dist/index.d.ts"
+  "typings": "./dist/index.d.ts",
+  "publishConfig": { "access": "public" }
 }

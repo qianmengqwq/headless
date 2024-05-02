@@ -11,17 +11,29 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npx simple-git-hooks"
+    "prepare": "npx simple-git-hooks",
+    "clear": "rimraf packages/**/dist",
+    "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
+    "changeset": "changeset",
+    "vp": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
+    "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20.12.8",
     "eslint": "^9.1.1",
     "lint-staged": "^15.2.2",
+    "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.4.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "pnpm commitlint --edit ${1}"
   },
   "lint-staged": {
     "*": "eslint --fix"
@@ -31,8 +43,7 @@
       "@commitlint/config-conventional"
     ]
   },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
-    "commit-msg": "pnpm commitlint --edit ${1}"
+  "publishConfig": {
+    "access": "public"
   }
 }
